@@ -1,0 +1,31 @@
+@import url("index.css");
+.purpose-section>h2 {
+    text-align: center;
+}
+
+.purpose-card {
+    padding: 22px;
+    margin: 16px 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: .3s;
+}
+
+.purpose-card:hover {
+    transform: translateY(-4px);
+}
+
+.purpose-card h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.conclusion {
+    padding: 24px;
+    margin-top: 25px;
+    background: rgba(0, 200, 238, .08);
+    border-radius: 16px;
+}

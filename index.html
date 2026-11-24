@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080f20">
+    <title>G12 English Project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html">
+            <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 5 L93 35 L77 88 H23 L7 35 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="5"
+              stroke-linejoin="round"/>
+
+        <text x="50" y="57"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              fill="currentColor"
+              font-size="25"
+              font-weight="bold"
+              font-family="Arial, sans-serif">MCF</text>
+    </svg>
+
+
+            <span class="logo-text">MCF <small>Grade 12 English</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html" data-page="index.html">⌂ Home</a>
+            <a href="lesson.html" data-page="lesson.html">📘 Lesson</a>
+            <a href="questions.html" data-page="questions.html">✎ Questions</a>
+            <a href="answer.html" data-page="answer.html">✓ Answer</a>
+            <a href="letters.html" data-page="letters.html">✉ Letter</a>
+            <a href="contacts.html" data-page="contacts.html">☎ Contact</a>
+
+            <div class="dropdown">
+                <button class="drop-btn" id="resourceBtn" aria-expanded="false">
+                ☷ Resources ▾
+            </button>
+
+                <div class="dropdown-menu" id="resourceMenu">
+                    <div class="menu-column">
+                        <h3>STUDY</h3>
+                        <a href="purpose.html">Project purpose</a>
+                        <a href="lesson.html">English lessons</a>
+                    </div>
+
+                    <div class="menu-column">
+                        <h3>PRACTICE</h3>
+                        <a href="questions.html">Practice questions</a>
+                        <a href="answer.html">Answer guide</a>
+                    </div>
+
+                    <div class="menu-column">
+                        <h3>PROJECT</h3>
+                        <a href="sources.html">Videos & Photos</a>
+                        <a href="contacts.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+
+
+        <section class="hero hero-modern">
+
+            <div class="hero-content">
+
+
+                <h1>G12 English Study Website</h1>
+
+                <p>Read the Paragraphs</p>
+
+                <p>
+                    You can study lessons, questions, and answers all in one place.
+                </p>
+
+                <a href="lesson.html" class="hero-btn">
+            Explore Lessons →
+        </a>
+            </div>
+
+            <div class="hero-visual" id="plantAnimation">
+
+                <div class="plant-glow"></div>
+
+                <svg class="plant-svg" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+            <linearGradient id="globeColor" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#64dfff"/>
+                <stop offset="50%" stop-color="#1688e8"/>
+                <stop offset="100%" stop-color="#0752a5"/>
+            </linearGradient>
+
+            <linearGradient id="deviceColor" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#54dfff"/>
+                <stop offset="100%" stop-color="#0875ce"/>
+            </linearGradient>
+
+            <filter id="glowEffect">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+
+        <!-- Ground Shadow -->
+        <ellipse cx="200" cy="410" rx="135" ry="17"
+                 fill="#087acb" opacity=".15"/>
+
+        <!-- Communication Orbit -->
+        <ellipse cx="200" cy="225" rx="155" ry="115"
+                 fill="none" stroke="#45cfff"
+                 stroke-width="3" opacity=".6"
+                 stroke-dasharray="8 7"/>
+
+        <!-- Globe -->
+        <circle cx="200" cy="205" r="100"
+                fill="url(#globeColor)"
+                stroke="#8ceaff" stroke-width="3"/>
+
+        <!-- Globe Lines -->
+        <ellipse cx="200" cy="205" rx="45" ry="100"
+                 fill="none" stroke="#b9efff"
+                 stroke-width="2" opacity=".7"/>
+
+        <ellipse cx="200" cy="205" rx="100" ry="40"
+                 fill="none" stroke="#b9efff"
+                 stroke-width="2" opacity=".7"/>
+
+        <path d="M105 205 H295 M200 105 V305"
+              stroke="#b9efff" stroke-width="2"
+              opacity=".5" fill="none"/>
+
+        <!-- Network Connections -->
+        <g stroke="#ffffff" stroke-width="2"
+           fill="none" opacity=".9"
+           filter="url(#glowEffect)">
+
+            <path d="M145 155 L200 205 L260 150"/>
+            <path d="M145 155 L155 255 L200 205"/>
+            <path d="M260 150 L250 255 L200 205"/>
+            <path d="M155 255 L250 255"/>
+
+        </g>
+
+        <!-- Network Points -->
+        <g fill="#ffffff">
+            <circle cx="145" cy="155" r="5"/>
+            <circle cx="260" cy="150" r="5"/>
+            <circle cx="155" cy="255" r="5"/>
+            <circle cx="250" cy="255" r="5"/>
+            <circle cx="200" cy="205" r="7"/>
+        </g>
+
+        <!-- Satellite -->
+        <g transform="translate(280 45) rotate(-20)">
+            <rect x="-17" y="-15" width="34" height="30"
+                  rx="5" fill="#eaf8ff"
+                  stroke="#1688d8" stroke-width="2"/>
+
+            <rect x="-65" y="-13" width="42" height="26"
+                  fill="#1267bd" stroke="#9deaff" stroke-width="2"/>
+
+            <path d="M-55 -13 V13 M-43 -13 V13"
+                  stroke="#8eeaff"/>
+
+            <rect x="23" y="-13" width="42" height="26"
+                  fill="#1267bd" stroke="#9deaff" stroke-width="2"/>
+
+            <path d="M35 -13 V13 M48 -13 V13"
+                  stroke="#8eeaff"/>
+
+            <circle cx="0" cy="0" r="7" fill="#56dfff"/>
+        </g>
+
+        <!-- WiFi Signal -->
+        <g transform="translate(80 125)"
+           fill="none" stroke="#ffffff"
+           stroke-width="6" stroke-linecap="round">
+
+            <path d="M-35 -15 Q0 -50 35 -15"/>
+            <path d="M-23 0 Q0 -23 23 0"/>
+            <path d="M-10 14 Q0 4 10 14"/>
+            <circle cx="0" cy="25" r="4" fill="#ffffff"/>
+        </g>
+
+        <!-- Chat Bubble -->
+        <g transform="translate(300 180)">
+            <rect x="-35" y="-25" width="70" height="48"
+                  rx="13" fill="#ffffff"
+                  stroke="#48cfff" stroke-width="2"/>
+
+            <path d="M-15 23 L-25 38 L5 23"
+                  fill="#ffffff" stroke="#48cfff"
+                  stroke-width="2"/>
+
+            <g fill="#1688dc">
+                <circle cx="-15" cy="-1" r="4"/>
+                <circle cx="0" cy="-1" r="4"/>
+                <circle cx="15" cy="-1" r="4"/>
+            </g>
+        </g>
+
+        <!-- Smartphone -->
+        <g transform="translate(95 300) rotate(-10)">
+            <rect x="-28" y="-55" width="56" height="100"
+                  rx="10" fill="#163b67"
+                  stroke="#a9eaff" stroke-width="3"/>
+
+            <rect x="-22" y="-43" width="44" height="75"
+                  rx="4" fill="url(#deviceColor)"/>
+
+            <circle cx="0" cy="38" r="3"
+                    fill="#ffffff"/>
+
+            <path d="M-12 -8 Q0 -25 12 -8"
+                  fill="none" stroke="#ffffff"
+                  stroke-width="3"/>
+        </g>
+
+        <!-- Laptop -->
+        <g transform="translate(270 345)">
+            <rect x="-48" y="-48" width="96" height="65"
+                  rx="6" fill="#183d68"
+                  stroke="#8deaff" stroke-width="3"/>
+
+            <rect x="-41" y="-41" width="82" height="50"
+                  rx="3" fill="url(#deviceColor)"/>
+
+            <path d="M-62 20 L62 20 L48 30 H-48 Z"
+                  fill="#c9eaff"
+                  stroke="#1688dc" stroke-width="2"/>
+
+            <!-- Email Symbol -->
+            <rect x="-17" y="-27" width="34" height="23"
+                  rx="4" fill="#ffffff"/>
+
+            <path d="M-17 -25 L0 -12 L17 -25"
+                  fill="none" stroke="#1688dc"
+                  stroke-width="3"/>
+        </g>
+
+        <!-- Connection Waves -->
+        <g fill="none" stroke="#5ce3ff"
+           stroke-width="3" opacity=".9"
+           filter="url(#glowEffect)">
+
+            <path d="M140 75 Q200 25 260 75"/>
+            <path d="M150 85 Q200 45 250 85"/>
+            <path d="M160 95 Q200 65 240 95"/>
+
+        </g>
+
+        <!-- Floating Connection Dots -->
+        <g fill="#ffffff" filter="url(#glowEffect)">
+            <circle cx="55" cy="230" r="5"/>
+            <circle cx="340" cy="260" r="5"/>
+            <circle cx="310" cy="100" r="4"/>
+            <circle cx="100" cy="70" r="4"/>
+        </g>
+
+    </svg>
+
+                <div class="plant-caption">
+                    CONNECT • COMMUNICATE • DISCOVER
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+
+        <section class="cards">
+
+            <a class="card" href="lesson.html">
+                <h2>📘 Lesson</h2>
+                <p>Lessons</p>
+            </a>
+
+            <a class="card" href="questions.html">
+                <h2>📝 Questions</h2>
+                <p>Practice for 100 Marks</p>
+            </a>
+
+            <a class="card" href="answer.html">
+                <h2>✅ Answer</h2>
+                <p>Check Questions and Answers</p>
+            </a>
+
+            <a class="card" href="letters.html">
+                <h2>✉️ Letter</h2>
+                <p>Appreciation Letter and Thank-you Letter</p>
+            </a>
+
+            <a class="card" href="contacts.html">
+                <h2>☎️ Contact</h2>
+                <p>Contact Information</p>
+            </a>
+
+            <a class="card" href="sources.html">
+                <h2>🎬 Sources</h2>
+                <p>Videos & Photos</p>
+            </a>
+
+            <a class="card" href="purpose.html">
+                <h2>◎ Project Purpose</h2>
+                <p>Project information</p>
+            </a>
+
+        </section>
+
+        <p class="notice">Scope:Paragraph Only</p>
+
+    </main>
+
+    <footer>
+        <p>G12 English Project | National ICT Award 2026</p>
+    </footer>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>

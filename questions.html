@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080f20">
+    <title>Practice Test - G12 English</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html">
+            <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 5 L93 35 L77 88 H23 L7 35 Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linejoin="round"/>
+
+                <text x="50" y="57"
+                    text-anchor="middle"
+                    dominant-baseline="middle"
+                    fill="currentColor"
+                    font-size="25"
+                    font-weight="bold"
+                    font-family="Arial, sans-serif">MCF</text>
+            </svg>
+
+            <span class="logo-text">MCF <small>Grade 12 English</small></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html" data-page="index.html">⌂ Home</a>
+            <a href="lesson.html" data-page="lesson.html">📘 Lesson</a>
+            <a href="questions.html" data-page="questions.html">✎ Questions</a>
+            <a href="answer.html" data-page="answer.html">✓ Answer</a>
+            <a href="letters.html" data-page="letters.html">✉ Letter</a>
+            <a href="contacts.html" data-page="contacts.html">☎ Contact</a>
+
+            <div class="dropdown">
+                <button class="drop-btn" id="resourceBtn" aria-expanded="false">
+                    ☷ Resources ▾
+                </button>
+
+                <div class="dropdown-menu" id="resourceMenu">
+                    <div class="menu-column">
+                        <h3>STUDY</h3>
+                        <a href="purpose.html">Project purpose</a>
+                        <a href="lesson.html">English lessons</a>
+                    </div>
+
+                    <div class="menu-column">
+                        <h3>PRACTICE</h3>
+                        <a href="questions.html">Practice questions</a>
+                        <a href="answer.html">Answer guide</a>
+                    </div>
+
+                    <div class="menu-column">
+                        <h3>PROJECT</h3>
+                        <a href="sources.html">Videos & Photos</a>
+                        <a href="contacts.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+
+        <section class="hero">
+            <h1>Practice Test — 100 Marks</h1>
+            <p>G12 English | Unit 10A Reading & Grammar</p>
+        </section>
+
+        <!-- SECTION A -->
+        <section class="panel">
+            <h2>Section A — Choose the Correct Answer (45 Marks)</h2>
+            <p>Choose the best answer. (1 mark each)</p>
+            <div id="choose"></div>
+        </section>
+
+        <!-- SECTION B -->
+        <section class="panel">
+            <h2>Section B — Initial Letters (45 Marks)</h2>
+            <p>Complete the sentences with the correct words. (1 mark each)</p>
+            <div id="initial"></div>
+        </section>
+
+        <!-- SECTION C -->
+        <section class="panel">
+            <h2>Section C — Grammar (10 Marks)</h2>
+            <p>Rewrite the following sentences or fill in the blanks. (1 mark each)</p>
+            <div id="grammar"></div>
+        </section>
+
+        <!-- RESULT -->
+        <div class="panel">
+
+            <button class="btn" id="checkAnswers" type="button">
+                Check Answers
+            </button>
+
+            <button class="btn" id="clearAnswers" type="button">
+                Clear Answers
+            </button>
+
+            <h2 id="score" class="score-panel" aria-live="polite"></h2>
+
+            <p>
+                Section A: 45 Marks | Section B: 45 Marks | Section C: 10 Marks
+            </p>
+
+            <p>Total: 100 Marks</p>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>G12 English Project | National ICT Award 2026</p>
+    </footer>
+
+    <script src="index.js" defer></script>
+    <script src="questions.js" defer></script>
+
+</body>
+
+</html>

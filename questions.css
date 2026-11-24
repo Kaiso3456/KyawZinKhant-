@@ -1,0 +1,22 @@
+@import url("index.css");
+.question label {
+    display: block;
+}
+
+.question input[type="text"] {
+    margin-top: 7px;
+}
+
+.feedback {
+    min-height: 24px;
+}
+
+.score-panel {
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 14px;
+    background: rgba(0, 200, 238, .1);
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+}

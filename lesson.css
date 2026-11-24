@@ -1,0 +1,28 @@
+@import url("index.css");
+.lesson-section {
+    margin: 22px 0;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.lesson-section h2 {
+    color: var(--primary);
+}
+
+.lesson-section li {
+    margin: 7px 0;
+    color: var(--muted);
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figcaption {
+    color: var(--muted);
+    font-size: 13px;
+}
